@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face-api Emotions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="face-api.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #48742c!important;
+        }
+        canvas {
+            position: absolute;
+            top: 7%;
+        
+
+        }
+
+        .emotions {
+            max-width: 400px;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- container & title -->
+    <div class="container">
+
+        <div class="video">
+            <video id="video" width="400" height="225" autoplay muted></video>
+        </div>
+
+        <!-- buttons for chatrooms -->
+        <div class="emotions mb-3 text-center">
+          <button class="btn" id="angry">#angry</button>
+          <button class="btn" id="disgusted">#disgusted</button>
+          <button class="btn" id="fearful">#fearful</button>
+          <button class="btn" id="happy">#happy</button>
+          <button class="btn" id="neutral">#neutral</button>
+          <button class="btn" id="sad">#sad</button>
+          <button class="btn" id="surprised">#surprised</button>
+
+</body>
+</html>
